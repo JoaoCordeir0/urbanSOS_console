@@ -1,0 +1,35 @@
+{
+  "name": "urbansos_console",
+  "version": "1.0.0",
+  "description": "Backend do projeto para reporte urbano",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "pm2 start app.js --name=urbansos_console",
+    "stop": "pm2 stop urbansos_console",
+    "restart": "pm2 restart urbansos_console"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoaoCordeir0/urbansos_console.git"
+  },
+  "author": "JV.Cordeiro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoaoCordeir0/urbansos_console/issues"
+  },
+  "homepage": "https://github.com/JoaoCordeir0/urbansos_console#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.6.0",
+    "sequelize": "^6.32.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

@@ -1,0 +1,46 @@
+body{
+    background-color: black;
+}
+
+body{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+pre{
+    color: #317f00;
+    font-weight: 900;
+}
+
+.console-err{
+    border: 1px solid gray;
+    width: 49%;
+    min-height: 100px;
+    margin-right: 40px;
+}
+
+.console-access{
+    border: 1px solid gray;
+    width: 49%;
+    min-height: 100px;
+}
+
+h3{
+    color: white;
+    margin-left: 10px;
+}
+
+#json-err{
+    padding: 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 90vh;
+}
+
+#json-access{
+    padding: 15px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    max-height: 90vh;
+}
