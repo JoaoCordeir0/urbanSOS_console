@@ -4,9 +4,6 @@ const consoleErr = async () => {
 
     $('#json-err').html('')
     $('#json-err').append('<pre>' + JSON.stringify(data, null, 2) + '</pre>')
-    $('#json-err').animate({
-        scrollTop: $(this).height() 
-    }, 100);
 }
 
 const consoleAccess = async () => {
@@ -14,13 +11,16 @@ const consoleAccess = async () => {
     const data = await reponse.json()
 
     $('#json-access').html('')
-    $('#json-access').append('<pre>' + JSON.stringify(data, null, 2) + '</pre>')
-    $('#json-access').animate({
-        scrollTop: $(this).height() 
-    }, 100);
+    $('#json-access').append('<pre>' + JSON.stringify(data, null, 2) + '</pre>')   
 }
 
-// setInterval(() => {
-//     consoleErr()
-//     consoleAccess()
-// }, 2000)
+setInterval(() => {
+    if (!$('#json-err').is(':hover')){       
+        consoleErr()
+        consoleAccess()
+        var objDivErr = document.getElementById("json-err");
+        var objDivAccess = document.getElementById("json-err");      
+        objDivErr.scrollTop = objDivErr.scrollHeight;
+        objDivAccess.scrollTop = objDivAccess.scrollHeight;
+    }    
+}, 1000)
