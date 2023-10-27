@@ -16,11 +16,13 @@ const consoleAccess = async () => {
 
 setInterval(() => {
     if (!$('#json-err').is(':hover')){       
-        consoleErr()
-        consoleAccess()
+        consoleErr()        
         var objDivErr = document.getElementById("json-err");
-        var objDivAccess = document.getElementById("json-access");      
-        objDivErr.scrollTop = objDivErr.scrollHeight;
+        objDivErr.scrollTop = objDivErr.scrollHeight;        
+    }  
+    if (!$('#json-access').is(':hover')){               
+        consoleAccess()        
+        var objDivAccess = document.getElementById("json-access");              
         objDivAccess.scrollTop = objDivAccess.scrollHeight;
-    }    
+    }   
 }, 1000)
