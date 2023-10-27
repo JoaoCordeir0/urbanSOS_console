@@ -19,7 +19,7 @@ setInterval(() => {
         consoleErr()
         consoleAccess()
         var objDivErr = document.getElementById("json-err");
-        var objDivAccess = document.getElementById("json-err");      
+        var objDivAccess = document.getElementById("json-access");      
         objDivErr.scrollTop = objDivErr.scrollHeight;
         objDivAccess.scrollTop = objDivAccess.scrollHeight;
     }    

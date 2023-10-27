@@ -31,7 +31,7 @@ const logErrors = (request, response) => {
 
 // Função que retorna as informações de um usuário especifico
 const logAccess = (request, response) => {
-    logModel.findOne({
+    logModel.findAll({
         raw: true, where: { type: 'Access' }
     }).then(log => {
         if (Array.isArray(log)) {
