@@ -8,8 +8,7 @@ body {
     overflow-x: hidden;
 }
 
-pre {
-    color: #317f00;
+pre {    
     font-weight: 900;
 }
 
@@ -32,6 +31,7 @@ h3 {
 }
 
 #json-err {
+    color: red;
     padding: 15px;
     overflow-y: scroll;
     scroll-behavior: smooth;
@@ -39,6 +39,7 @@ h3 {
 }
 
 #json-access {
+    color: #317f00;
     padding: 15px;
     overflow-y: scroll;
     scroll-behavior: smooth;
